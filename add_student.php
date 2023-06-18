@@ -112,7 +112,11 @@
                             <div class="card-body rounded">
                             <h4 class="card-title"><i class="mdi mdi-pencil"></i> ข้อมูลที่เพิ่มล่าสุด</h4>
                             <div class="row">
-                                <div class="col-12 text-end"> <i class="bi bi-pencil-square"></i> <span id="edit1">แก้ไข</span></div>
+                                <div class="col-12 text-end">
+                                     <i class="bi bi-pencil-square"></i> <span id="edit">แก้ไข</span>
+                                     
+                                     <i class="bi bi-x-circle"></i> <span id="btn">ลบ</span>
+                                </div>
                             </div>
                             <div class="row my-2">
                                 <div class="col-lg-2 text-lg-end">รหัสประจำตัว:</div>
@@ -156,12 +160,6 @@
                                     <input type="text" name="stu_tel" id="stu_tel" class="form-control" value="<?php echo $res_show['stu_tel']; ?>">
                                 </div>
                             </div>
-                            <div class="row my-2">
-                                <div class="col-lg-12 text-center">
-                                    <input type="button" value="ปรับปรุงข้อมูล" id="btn-edit" class="btn btn-sm btn-info" disabled>
-                                    <input type="submit" value="ลบ" id="btn-del" class="btn btn-sm btn-danger" disabled>
-                                </div>
-                            </div>
                             </div>
                         </div>
                     </div>
@@ -178,14 +176,6 @@
             <script>
                 $(function(){
                     $('#showform :input').attr('readonly','readonly');
-                    $('.bi-pencil-square').click(function(){
-                        $( "#btn-edit" ).prop( "disabled", false );
-                        $( "#btn-del" ).prop( "disabled", false );
-                    })
-                    $('#edit1').click(function(){
-                        $( "#btn-edit" ).prop( "disabled", false );
-                        $( "#btn-del" ).prop( "disabled", false );
-                    })
                 })
             </script>
      <?php 
