@@ -43,6 +43,7 @@
                         <div class="card">
                             <div class="card-body rounded" >
                                 <h4 class="card-title"><i class="mdi mdi-pencil"></i> เพิ่มข้อมูลนักเรียน</h4>
+                                <br>
                                 <form name="f1" id="f1">
                                 <div class="row my-2">
                                     <div class="col-lg-2 text-lg-end">รหัสประจำตัว:</div>
