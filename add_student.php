@@ -169,6 +169,38 @@
                 <!-- ============================================================== -->
                 <!-- Recent comment and chats -->
                 <!-- ============================================================== -->
+
+                <div class="row my-2">
+                <div class="col-12">
+                    <table class="table table-hover table-bordered bg-white">
+                        <thead class="text-center">
+                            <tr>
+                                <th>เลขประจำตัว</th>
+                                <th>ชื่อ-สกุล</th>
+                                <th>อายุ</th>
+                                <th>ที่อยู่</th>
+                                <th>จัดการ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php 
+                            
+                            ?>
+                            
+                            <tr>
+                                <td>ทดสอบ</td>
+                                <td>ทดสอบ</td>
+                                <td></td>
+                                <td></td>
+                                <td class="text-center">
+                                    <i class="bi bi-pencil-square"></i> <span id="edit">แก้ไข</span>
+                                    <i class="bi bi-x-circle"></i> <span id="btn">ลบ</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
             </div>
             <!-- ============================================================== -->
             <!-- End Container fluid  -->
