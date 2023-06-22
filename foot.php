@@ -1,7 +1,7 @@
  <!-- footer -->
             <!-- ============================================================== -->
             <footer class="footer text-center">
-                test All Rights Reserved by Matrix-admin. Designed and Developed by <a
+                All Rights Reserved by Matrix-admin. Designed and Developed by <a
                     href="https://www.wrappixel.com">WrapPixel</a>.
             </footer>
             <!-- ============================================================== -->
