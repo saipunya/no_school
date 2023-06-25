@@ -174,7 +174,6 @@
                                     <th class="text-center">รหัสประจำตัว</th>
                                     <th class="text-center">ชื่อ-สกุล</th>
                                     <th class="text-center">วันเกิด</th>
-                                    <th class="text-center">วันเกิด</th>
                                     <th class="text-center fw-bold text-danger">จัดการ</th>
                                 </tr>
                                 <?php 
@@ -187,9 +186,10 @@
                                     <td><?= $fetch_showall['stu_code'];?></td>
                                     <td><?= $fetch_showall['stu_name'];?></td>
                                     <td><?= $fetch_showall['stu_born'];?></td>
-                                    <td class="text-nowrap text-center text-danger fw-bold">
-                                    <i class="bi bi-pencil-square"></i> แก้ไข
-                                    <i class="bi bi-x-circle"></i> ลบ
+                                    <td class="text-nowrap text-center text-danger">
+                                        <i class="bi bi-search"></i> ข้อมูล
+                                        <i class="bi bi-pencil-square"></i> แก้ไข
+                                        <i class="bi bi-x-circle"></i> ลบ
                                     </td>
                                 </tr>
                                 <?php 
@@ -203,38 +203,6 @@
                 <!-- ============================================================== -->
                 <!-- Recent comment and chats -->
                 <!-- ============================================================== -->
-
-                <div class="row my-2">
-                <div class="col-12">
-                    <table class="table table-hover table-bordered bg-white">
-                        <thead class="text-center">
-                            <tr>
-                                <th>เลขประจำตัว</th>
-                                <th>ชื่อ-สกุล</th>
-                                <th>อายุ</th>
-                                <th>ที่อยู่</th>
-                                <th>จัดการ</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php 
-                            
-                            ?>
-                            
-                            <tr>
-                                <td>ทดสอบ</td>
-                                <td>ทดสอบ</td>
-                                <td></td>
-                                <td></td>
-                                <td class="text-center">
-                                    <i class="bi bi-pencil-square"></i> <span id="edit">แก้ไข</span>
-                                    <i class="bi bi-x-circle"></i> <span id="btn">ลบ</span>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
             </div>
             <!-- ============================================================== -->
             <!-- End Container fluid  -->

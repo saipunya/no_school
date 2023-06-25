@@ -32,53 +32,37 @@
         <!-- เริ่มต้น ใส่เนื้อหาที่นี่ -->
             <div class="container-fluid">
                 <div class="card">
-                    <div class="card-header">บันทึกข้อมูลรายวิชา</div>
+                    <div class="card-header">บันทึกผลการเรียน</div>
                     <div class="card-body">
                         <div class="row my-2">
-                            <div class="col-md-2 text-md-end">รหัสวิชา:</div>
-                            <div class="col-md-10"><input type="text" name="li_code" id="li_code" class="form-control"></div>
-                        </div>
-                        <div class="row my-2">
-                            <div class="col-md-2 text-md-end">ชื่อวิชา:</div>
-                            <div class="col-md-10"><input type="text" name="li_subject" id="li_subject" class="form-control"></div>
-                        </div>
-                        <div class="row my-2">
-                            <div class="col-md-2 text-md-end">รายละเอียด:</div>
-                            <div class="col-md-10"><textarea name="li_detail" class="form-control" id="" cols="30" rows="10"></textarea></div>
-                        </div>
-                        <div class="row my-2">
-                            <div class="col-md-2 text-md-end">ระดับชั้น:</div>
-                            <div class="col-md-2">
-                                <select name="li_class" id="" class="form-control">
+                            <div class="col-md-2 text-md-end">เลขประจำตัว</div>
+                            <div class="col-md-10">
+                                <select name="gr_number" id="gr_number" class="form-control">
                                     <option value="">++โปรดเลือก++</option>
-                                    <?php 
-                                        $res_p = $mysqli->query("SELECT * FROM tbl_chan ORDER BY ch_id ASC");
-                                        while($fetch_p = $res_p->fetch_assoc()) {
-                                    ?>
-                                    <option value="<?php echo $fetch_p['ch_code'];?>"><?php echo $fetch_p['ch_subject'];?></option>
-                                    <?php 
-                                        }
-                                    ?>
-                                    
-                                    
                                 </select>
                             </div>
-                            <div class="col-md-2 text-md-end">จำนวนตัวชี้วัด:</div>
-                            <div class="col-md-2"><input type="number" name="li_kpi" id="li_kpi" class="form-control" placeholder="ระบุแค่ตัวเลขเท่านั้น"></div>
-                            <div class="col-md-2 text-md-end">จำนวนชั่วโมง:</div>
-                            <div class="col-md-2"><input type="number" name="li_study" id="li_study" class="form-control" placeholder="ระบุแค่ตัวเลขเท่านั้น"></div>
                         </div>
                         <div class="row my-2">
-                            <div class="col-md-2 text-md-end">คะแนนเก็บ:</div>
-                            <div class="col-md-2"><input type="number" name="li_startpoint" id="li_startpoint" class="form-control" placeholder="ระบุแค่ตัวเลขเท่านั้น"></div>
-                            <div class="col-md-2 text-md-end">คะแนนกลางภาค:</div>
-                            <div class="col-md-2"><input type="number" name="li_midpoint" id="li_midpoint" class="form-control" placeholder="ระบุแค่ตัวเลขเท่านั้น"></div>
-                            <div class="col-md-2 text-md-end">คะแนนปลายภาค:</div>
-                            <div class="col-md-2"><input type="number" name="li_finalpoint" id="li_finalpoint" class="form-control" placeholder="ระบุแค่ตัวเลขเท่านั้น"></div>
+                            <div class="col-md-2 text-md-end">ปีการศึกษา</div>
+                            <div class="col-md-4">
+                                <select name="gr_year" id="gr_year" class="form-control">
+                                    <option value="">++โปรดเลือก++</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2 text-md-end">ภาคการเรียน</div>
+                            <div class="col-md-4">
+                                <select name="gr_turm" id="gr_turm" class="form-control">
+                                    <option value="">++โปรดเลือก++</option>
+                                    <option value="t1">เทอม 1</option>
+                                    <option value="t2">เทอม 2</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="row my-2">
-                            <div class="col-md-2 text-md-end">หมายเหตุ(ถ้ามี):</div>
-                            <div class="col-md-10"><textarea name="li_maihed" class="form-control" id="" cols="30" rows="5"></textarea></div>
+                            <div class="col-md-2 text-md-end">ระดับชั้น</div>
+                            <div class="col-md-10">
+                                <select name="" id=""></select>
+                            </div>
                         </div>
                         <div class="row my-2">
                             <div class="col-md-12 text-center">

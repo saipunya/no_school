@@ -17,6 +17,9 @@
                                 href="add_listwicha.php" aria-expanded="false"><i class="mdi mdi-account-circle"></i><span
                                     class="hide-menu">เพิ่มรายวิชา</span></a></li>
 
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="add_grade.php" aria-expanded="false"><i class="mdi mdi-account-circle"></i><span
+                                    class="hide-menu">เพิ่มผลการเรียน</span></a></li>
 
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
                                 href="charts.html" aria-expanded="false"><i class="mdi mdi-chart-bar"></i><span
