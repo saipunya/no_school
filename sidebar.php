@@ -10,11 +10,11 @@
                                     
 
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                                href="test.php" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span
+                                href="add_student.php" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span
                                     class="hide-menu">ข้อมูลนักเรียน</span></a></li>
 
                         <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
-                                href="add_student.php" aria-expanded="false"><i class="mdi mdi-account-circle"></i><span
+                                href="test.php" aria-expanded="false"><i class="mdi mdi-account-circle"></i><span
                                     class="hide-menu">สำหรับผู้ดูแล</span></a></li>
 
 

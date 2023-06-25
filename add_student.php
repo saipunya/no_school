@@ -166,6 +166,39 @@
                     </div>
                     </form>
                 </div>
+                <div class="row my-2">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <tr class="table-info">
+                                    <th class="text-center">รหัสประจำตัว</th>
+                                    <th class="text-center">ชื่อ-สกุล</th>
+                                    <th class="text-center">วันเกิด</th>
+                                    <th class="text-center fw-bold text-danger">จัดการ</th>
+                                </tr>
+                                <?php 
+                                    $res_showall = $mysqli->query("SELECT * FROM tbl_student ORDER BY stu_id DESC LIMIT 1");
+                                    while($fetch_showall = $res_showall->fetch_assoc()) {
+
+                                ?>
+                                
+                                <tr>
+                                    <td><?= $fetch_showall['stu_code'];?></td>
+                                    <td><?= $fetch_showall['stu_name'];?></td>
+                                    <td><?= $fetch_showall['stu_born'];?></td>
+                                    <td class="text-nowrap text-center text-danger fw-bold">
+                                    <i class="bi bi-pencil-square"></i> แก้ไข
+                                    <i class="bi bi-x-circle"></i> ลบ
+                                    </td>
+                                </tr>
+                                <?php 
+                                    }
+                                ?>
+                                
+                            </table>
+                        </div>
+                    </div>
+                </div>
                 <!-- ============================================================== -->
                 <!-- Recent comment and chats -->
                 <!-- ============================================================== -->
