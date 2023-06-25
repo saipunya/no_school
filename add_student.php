@@ -174,6 +174,7 @@
                                     <th class="text-center">รหัสประจำตัว</th>
                                     <th class="text-center">ชื่อ-สกุล</th>
                                     <th class="text-center">วันเกิด</th>
+                                    <th class="text-center">วันเกิด</th>
                                     <th class="text-center fw-bold text-danger">จัดการ</th>
                                 </tr>
                                 <?php 
