@@ -179,16 +179,20 @@
                                     <th class="text-center fw-bold text-danger">จัดการ</th>
                                 </tr>
                                 <?php 
-                                    $res_showall = $mysqli->query("SELECT * FROM tbl_student ORDER BY stu_id DESC LIMIT 1");
+                                    $res_showall = $mysqli->query("SELECT * FROM tbl_student ORDER BY stu_id DESC");
                                     while($fetch_showall = $res_showall->fetch_assoc()) {
 
                                 ?>
                                 
                                 <tr>
                                     <td><?= $fetch_showall['stu_code'];?></td>
-                                    <td><?= $fetch_showall['stu_name'];?></td>
+                                    <td><?php if($fetch_showall['stu_sex']=='ชาย') {
+                                        echo '<span class="material-symbols-outlined">male</span> เด็กชาย';
+                                    }else{
+                                        echo '<span class="material-symbols-outlined">female</span> เด็กหญิง';
+                                    }?><?php echo $fetch_showall['stu_name'];?></td>
                                     <td><?php echo fullDate($fetch_showall['stu_born']);?></td>
-                                    <td><?php echo allAge($fetch_showall['stu_born']); ?></td>
+                                    <td class="text-nowrap text-center"><?php echo allAge($fetch_showall['stu_born']); ?></td>
                                     <td class="text-nowrap text-center text-danger">
                                         <i class="bi bi-search"></i> ข้อมูล
                                         <i class="bi bi-pencil-square"></i> แก้ไข

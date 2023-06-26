@@ -37,9 +37,13 @@
      function allAge($A){
         $now = strtotime(date('Y-m-d'));
         $born = strtotime(date($A));
-        $all_age =floor(($now - $born)/60*60*24*365);
-        return $all_age;
-
+        $diff = abs($now - $born);
+        $all_age =floor($diff/(60*60*24*365));
+        $all_month =floor(($diff-($all_age *60*60*24*365))/(60*60*24*30));
+        $all_day =floor(($diff-($all_age *60*60*24*365)-($all_month*60*60*24*30))/(60*60*24));
+ 
+            return "<span class='fw-bold'>".$all_age." ปี "."</span>".$all_month." เดือน ".$all_day." วัน";;
+       
      }
 
      

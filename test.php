@@ -1,13 +1,9 @@
 <?php
-$mysqli = new mysqli();
-$mysqli->connect('localhost','chaiya_db','sumet022','chaiya_chain');
-$res_show = $mysqli->query("SELECT * FROM member2");
-while($row = $res_show->fetch_array()){
+        $now = strtotime(date('Y-m-d'));
+        $born = strtotime(date('2018-02-27'));
+        $all_age =($now - $born)/(60*60*24*365);
 
+        echo $all_age;
 
-?>
-<span><?php echo $row['m_name']; ?></span>
-<?php 
-}
 ?>
 
