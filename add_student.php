@@ -174,6 +174,8 @@
                                     <th class="text-center">รหัสประจำตัว</th>
                                     <th class="text-center">ชื่อ-สกุล</th>
                                     <th class="text-center">วันเกิด</th>
+                                    <th class="text-center">อายุ</th>
+                                    
                                     <th class="text-center fw-bold text-danger">จัดการ</th>
                                 </tr>
                                 <?php 
@@ -185,7 +187,8 @@
                                 <tr>
                                     <td><?= $fetch_showall['stu_code'];?></td>
                                     <td><?= $fetch_showall['stu_name'];?></td>
-                                    <td><?= $fetch_showall['stu_born'];?></td>
+                                    <td><?php echo fullDate($fetch_showall['stu_born']);?></td>
+                                    <td><?php echo allAge($fetch_showall['stu_born']); ?></td>
                                     <td class="text-nowrap text-center text-danger">
                                         <i class="bi bi-search"></i> ข้อมูล
                                         <i class="bi bi-pencil-square"></i> แก้ไข

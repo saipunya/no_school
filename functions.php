@@ -34,6 +34,14 @@
         echo $Adate;
      }
 
+     function allAge($A){
+        $now = strtotime(date('Y-m-d'));
+        $born = strtotime(date($A));
+        $all_age =floor(($now - $born)/60*60*24*365);
+        return $all_age;
+
+     }
+
      
 
 
